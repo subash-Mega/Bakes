@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvi Home Bakery - Homemade with Love</title>
+    <link rel="icon" href="img/Icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="head">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Freshly Baked Daily</span>
+            <h1 id="welcome">Welcome to Bhuvi Home Bakery</h1>
+            <p class="hero-desc">Creating sweet memories from our kitchen to your table.</p>
+            <button id="order-btn" class="btn-primary">Order Now</button>
+        </div>
+    </header>
+    <section id="feature-section">
+        <div id="feature">
+            <div class="feature-item">
+                <span class="feature-icon">❤️</span>
+                <div class="feature-info">
+                    <h3>Homemade with Love</h3>
+                    <p>Baked with personal care</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🍪</span>
+                <div class="feature-info">
+                    <h3>Fresh Ingredients</h3>
+                    <p>Only the finest selection</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">✨</span>
+                <div class="feature-info">
+                    <h3>Custom Designed</h3>
+                    <p>Your dream cake realized</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🚚</span>
+                <div class="feature-info">
+                    <h3>Delivery Available</h3>
+                    <p>Direct to your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cakes-section" class="container">
+        <div class="our">
+            <div class="line1"></div>
+            <div class="center">
+                <h1>Our Cakes</h1>
+            </div>
+            <div class="line2"></div>
+        </div>
+        <div id="cake-filters" class="categories-tabs">
+            <button class="tab-btn active" data-filter="all">All Cakes</button>
+            <button class="tab-btn" data-filter="birthday">Birthday Cakes</button>
+            <button class="tab-btn" data-filter="wedding">Wedding Cakes</button>
+            <button class="tab-btn" data-filter="custom">Custom Cakes</button>
+            <button class="tab-btn" data-filter="specialty">Specialty Cakes</button>
+        </div>
+        <div id="cake-list" class="cakes-grid">
+            <div class="cake-card" data-category="specialty birthday">
+                <div class="cake-img-wrapper">
+                    <img src="img/Blue Berry.jpeg" alt="Blue Berry Cake">
+                    <span class="cake-tag">Specialty</span>
+                </div>
+                <div class="cake-details">
+                    <h2>Blue Berry Cake</h2>
+                    <p class="cake-desc">Delectable layers with delicious blueberry glaze and rich cream.</p>
+                    <button class="btn-select-cake" data-cake="Blue Berry Cake">Select & Order</button>
+                </div>
+            </div>
+            <div class="cake-card" data-category="birthday custom">
+                <div class="cake-img-wrapper">
+                    <img src="img/Choco truffle cake.jpeg" alt="Choco Truffle Cake">
+                    <span class="cake-tag">Best Seller</span>
+                </div>
+                <div class="cake-details">
+                    <h2>Choco Truffle Cake</h2>
+                    <p class="cake-desc">Decadent chocolate layers filled with smooth chocolate ganache.</p>
+                    <button class="btn-select-cake" data-cake="Choco Truffle Cake">Select & Order</button>
+                </div>
+            </div>
+            <div class="cake-card" data-category="specialty">
+                <div class="cake-img-wrapper">
+                    <img src="img/Honey cake.jpeg" alt="Honey Cake">
+                    <span class="cake-tag">Specialty</span>
+                </div>
+                <div class="cake-details">
+                    <h2>Honey Cake</h2>
+                    <p class="cake-desc">Moist honey-infused sponge layered with light caramel cream.</p>
+                    <button class="btn-select-cake" data-cake="Honey Cake">Select & Order</button>
+                </div>
+            </div>
+            <div class="cake-card" data-category="custom wedding">
+                <div class="cake-img-wrapper">
+                    <img src="img/Mango white forest.jpeg" alt="Mango White Forest Cake">
+                    <span class="cake-tag">Seasonal</span>
+                </div>
+                <div class="cake-details">
+                    <h2>Mango White Forest Cake</h2>
+                    <p class="cake-desc">Fresh white chocolate flakes and tropical mango layers.</p>
+                    <button class="btn-select-cake" data-cake="Mango White Forest Cake">Select & Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="our view-more-container">
+            <div class="line1"></div>
+            <div class="center">
+                <button class="btn-secondary" id="view-more-btn">View More</button>
+            </div>
+            <div class="line2"></div>
+        </div>
+    </section>
+    <section id="details" class="container">
+        <div class="baker-profile-card">
+            <div class="baker-badge"><i class="fa-solid fa-crown"></i> The Artisan Baker</div>
+            <h1>Baker Details</h1>
+            <div class="baker-bio">
+                <h2>Hi, I'm Rathidevi</h2>
+                <p class="baker-since">Baking Since 2022</p>
+                <p class="baker-quote">"Creating sweet memories from my kitchen to your table. Every design is treated
+                    as a piece of edible art made from scratch."</p>
+            </div>
+        </div>
+    </section>
+    <section id="custom-order-section" class="container">
+        <div class="our">
+            <div class="line1"></div>
+            <div class="center">
+                <h1>Custom Order your Cake</h1>
+            </div>
+            <div class="line2"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-step">
+                <div class="step-number">1</div>
+                <div class="step-card">
+                    <div class="step-image">
+                        <img src="img/Wallnet Butterscotch.jpeg" alt="Choose Cake Style">
+                    </div>
+                    <div class="step-text">
+                        <h3>Choose your Cake</h3>
+                        <p>Select your favorite cake style, base theme, or upload your reference design.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-number">2</div>
+                <div class="step-card">
+                    <div class="step-image">
+                        <img src="img/white forest Cake.jpeg" alt="Pick a Flavor">
+                    </div>
+                    <div class="step-text">
+                        <h3>Pick the Flavor</h3>
+                        <p>Choose from our premium range of flavors like blueberry, truffle, mango, and honey.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-number">3</div>
+                <div class="step-card">
+                    <div class="step-image">
+                        <img src="img/Customised black forest cake.png" alt="Select Size & Weight">
+                    </div>
+                    <div class="step-text">
+                        <h3>Select Size</h3>
+                        <p>Choose the weight (0.5kg, 1kg, 2kg+) and shape to perfectly feed your guests.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-number">4</div>
+                <div class="step-card">
+                    <div class="step-image">
+                        <img src="img/butterscotch cake.jpeg" alt="Add a Custom Message">
+                    </div>
+                    <div class="step-text">
+                        <h3>Add your Message</h3>
+                        <p>Write your greetings, names, or custom toppings to finish off the design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our order-cta-container">
+            <div class="line1"></div>
+            <div class="center">
+                <button class="btn-primary open-order-modal-btn">Get Started</button>
+            </div>
+            <div class="line2"></div>
+        </div>
+    </section>
+    <section id="delivery-section">
+        <div id="deilvery">
+            <span class="delivery-icon-badge"><i class="fa-solid fa-truck-fast"></i> Fast Local Delivery</span>
+            <h1>Deliver & Contact Details</h1>
+            <h2>Have Questions?</h2>
+            <p class="delivery-p">Get in touch with us to discuss customizations, pricing, and orders!</p>
+            <div class="contact-buttons-group">
+                <a href="tel:+917558114087" class="contact-btn phone-link">
+                    <i class="fa-solid fa-phone"></i> Call +91 75581 14087
+                </a>
+                <button class="contact-btn whatsapp-link open-order-modal-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Order Custom Cake
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="instagram-section" class="container">
+        <div class="our">
+            <div class="line1"></div>
+            <div class="center">
+                <a href="https://www.instagram.com/sri_bhuvi_herbales/" target="_blank" id="insta">
+                    <i class="fa-brands fa-instagram"></i> Follow Us on Instagram
+                </a>
+            </div>
+            <div class="line2"></div>
+        </div>
+        <div class="instagram-grid">
+            <div class="instagram-card">
+                <a href="https://www.instagram.com/p/DKEG8AZSBtS/?img_index=4" target="_blank">
+                    <img src="img/Strarawberry.jpeg" alt="Instagram Post 1">
+                    <div class="insta-overlay">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>View Post</span>
+                    </div>
+                </a>
+            </div>
+            <div class="instagram-card">
+                <a href="https://www.instagram.com/p/DOV23cUElJ2/?img_index=1" target="_blank">
+                    <img src="img/Honey cake 2.jpeg" alt="Instagram Post 2">
+                    <div class="insta-overlay">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>View Post</span>
+                    </div>
+                </a>
+            </div>
+            <div class="instagram-card">
+                <a href="https://www.instagram.com/p/DZuVGOPCcrq/?img_index=1" target="_blank">
+                    <img src="img/Pista flavour Tea cake.png" alt="Instagram Post 3">
+                    <div class="insta-overlay">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>View Post</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Bhuvi Home Bakery. Created with love by Rathidevi. All Rights Reserved.</p>
+    </footer>
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-cake-candles"></i> Custom Cake Inquiry</h2>
+                <p>Enter details below to send a pre-formatted order directly to Rathidevi on WhatsApp!</p>
+            </div>
+            <form id="whatsapp-order-form">
+                <div class="form-group">
+                    <label for="order-name">Your Name *</label>
+                    <input type="text" id="order-name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="order-cake-type">Cake Type *</label>
+                    <select id="order-cake-type" required>
+                        <option value="" disabled selected>Select a style</option>
+                        <option value="Blue Berry Cake">Blue Berry Cake</option>
+                        <option value="Choco Truffle Cake">Choco Truffle Cake</option>
+                        <option value="Honey Cake">Honey Cake</option>
+                        <option value="Mango White Forest Cake">Mango White Forest Cake</option>
+                        <option value="Custom Design">Custom Designer Cake</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="order-flavor">Preferred Flavor</label>
+                        <input type="text" id="order-flavor" placeholder="e.g. Chocolate, Butterscotch, Vanilla">
+                    </div>
+                    <div class="form-group">
+                        <label for="order-size">Weight / Size *</label>
+                        <select id="order-size" required>
+                            <option value="0.5kg">0.5 kg (approx 1 lb)</option>
+                            <option value="1.0kg" selected>1.0 kg (approx 2 lbs)</option>
+                            <option value="1.5kg">1.5 kg (approx 3 lbs)</option>
+                            <option value="2.0kg+">2.0+ kg (Large/Multi-tier)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="order-message">Custom Writing on Cake</label>
+                    <input type="text" id="order-message" placeholder="e.g. Happy Birthday Sri!">
+                </div>
+                <div class="form-group">
+                    <label for="order-notes">Additional Requests</label>
+                    <textarea id="order-notes" rows="3"
+                        placeholder="Describe colors, eggless preferences, delivery date, reference ideas, etc."></textarea>
+                </div>
+                <button type="submit" class="btn-submit-order">
+                    <i class="fa-brands fa-whatsapp"></i> Submit Order via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
